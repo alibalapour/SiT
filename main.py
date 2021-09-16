@@ -182,7 +182,7 @@ def main(args):
     # disable any harsh augmentation in case of Self-supervise training
     if args.training_mode == 'SSL':
         print("NOTE: Smoothing, Mixup, CutMix, and AutoAugment will be disabled in case of Self-supervise training")
-        args.smoothing = args.reprob = args.reprob = args.recount = args.mixup = args.cutmix = 0.0
+        args.smoothing = args.reprob = args.recount = args.mixup = args.cutmix = 0.0
         args.aa = ''
 
         if args.SiT_LinearEvaluation == 1:
