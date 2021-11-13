@@ -5,9 +5,9 @@ from torchvision import transforms
 from timm.data.constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from timm.data import create_transform
 
-from datasets.TinyImageNet import TinyImageNetDataset
-from datasets.CIFAR import CIFAR10, CIFAR100
-from datasets.STL10 import STL10
+from dataset.TinyImageNet import TinyImageNetDataset
+from dataset.CIFAR import CIFAR10, CIFAR100
+from dataset.STL10 import STL10
     
 def build_dataset(is_train, args):
     transform = build_transform(is_train, args)
